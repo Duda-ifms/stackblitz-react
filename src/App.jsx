@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./App.jsx";
 import { auth } from "./config/firebaseConfig.js";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { SignJWT } from "jose";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function App() {
   const [email, setEmail] = useState("");
@@ -55,6 +55,11 @@ export default function App() {
         />
         <button type="submit">Entrar</button> 
       </form>
+      <div>
+      <Link to="/registrar">
+      <p> Não tenho conta!</p>
+      </Link>
+      </div>
     </main>
   );
 }
