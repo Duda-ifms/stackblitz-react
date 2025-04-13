@@ -34,8 +34,9 @@ export default function App() {
 
   return (
     <main>
+      <h1>Login</h1>
       <form onSubmit={autenticarComFirebase}>
-        <label htmlFor="email">E-mail</label>
+      <label htmlFor="email">E-mail</label>
         <input
           id="email"
           name="email"
@@ -44,6 +45,8 @@ export default function App() {
           onChange={(evento) => setEmail(evento.target.value)}
           required
         />
+        <br></br>
+        <br></br>
         <label htmlFor="password">Senha</label>
         <input
           id="password"
@@ -53,11 +56,14 @@ export default function App() {
           onChange={(evento) => setSenha(evento.target.value)}
           required
         />
+        <br></br>
+        <br></br>
+
         <button type="submit">Entrar</button> 
       </form>
       <div>
       <Link to="/registrar">
-      <p> Não tenho conta!</p>
+      <p>Não tenho acesso!</p>
       </Link>
       </div>
     </main>

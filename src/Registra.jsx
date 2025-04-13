@@ -30,6 +30,8 @@ export default function Registra(){
             onChange={(e) => setEmail(e.target.value)}
             required
             />
+            <br></br>
+            <br></br>
             <input
             type="senha"
             placeholder="Senha"
@@ -37,6 +39,9 @@ export default function Registra(){
             onChange={(e) => setSenha(e.target.value)}
             required
             />
+            <br></br>
+            <br></br>
+
             <button type="submit">Registrar</button>
             </form>
         </main>
