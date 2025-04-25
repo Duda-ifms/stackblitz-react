@@ -33,7 +33,7 @@ export default function Registra(){
             <br></br>
             <br></br>
             <input
-            type="senha"
+            type="password"
             placeholder="Senha"
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
